@@ -25,7 +25,7 @@ public class Solution{
     }
     public static Sim[] transferCircle(Sim[] sim,String circle1,String circle2){   
         Sim[] refined = new Sim[0];
-        for(int i=0;i<5;i++){
+        for(int i=0;i<sim.length;i++){
             if(sim[i].getCircle().equals(circle1)){
                 refined=Arrays.copyOf(refined,refined.length+1);
                 refined[refined.length-1]=sim[i];
